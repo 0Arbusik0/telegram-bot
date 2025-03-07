@@ -9,9 +9,10 @@ TOKEN = os.getenv("BOT_TOKEN")
 GROUP_CHAT_ID = os.getenv("GROUP_CHAT_ID")
 
 if not TOKEN or not GROUP_CHAT_ID:
-    raise ValueError("Переменные окружения TOKEN или GROUP_CHAT_ID не установлены!")
+    raise ValueError("Переменные окружения TOKEN не установлены!")
 
-GROUP_CHAT_ID = int(GROUP_CHAT_ID)
+if not GROUP_CHAT_ID:
+    raise ValueError("Переменные окружения GROUP_CHAT_ID не установлены!")
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
