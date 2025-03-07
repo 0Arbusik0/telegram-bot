@@ -8,6 +8,9 @@ from aiogram.exceptions import TelegramBadRequest
 TOKEN = os.getenv("TOKEN")
 GROUP_CHAT_ID = os.getenv("GROUP_CHAT_ID")
 
+print("TOKEN:", os.getenv("TOKEN"))
+print("GROUP_CHAT_ID:", os.getenv("GROUP_CHAT_ID"))
+
 if not TOKEN or not GROUP_CHAT_ID:
     raise ValueError("Переменные окружения TOKEN не установлены!")
 
