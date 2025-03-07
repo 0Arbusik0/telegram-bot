@@ -5,7 +5,7 @@ from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.filters import Command
 from aiogram.exceptions import TelegramBadRequest
 
-TOKEN = os.getenv("BOT_TOKEN")
+TOKEN = os.getenv("TOKEN")
 GROUP_CHAT_ID = os.getenv("GROUP_CHAT_ID")
 
 if not TOKEN or not GROUP_CHAT_ID:
