@@ -5,17 +5,9 @@ from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.filters import Command
 from aiogram.exceptions import TelegramBadRequest
 
-TOKEN = os.getenv("TOKEN")
-GROUP_CHAT_ID = os.getenv("GROUP_CHAT_ID")
+TOKEN = "7362733217:AAEF4Ua3t_Nwvf5x6ETERR-S8vlCzKY9c6k"
+GROUP_CHAT_ID = -1002499181532
 
-print("TOKEN:", os.getenv("TOKEN"))
-print("GROUP_CHAT_ID:", os.getenv("GROUP_CHAT_ID"))
-
-if not TOKEN:
-    raise ValueError("Переменные окружения TOKEN не установлены!")
-
-if not GROUP_CHAT_ID:
-    raise ValueError("Переменные окружения GROUP_CHAT_ID не установлены!")
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
