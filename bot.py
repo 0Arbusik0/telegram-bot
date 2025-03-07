@@ -11,7 +11,7 @@ GROUP_CHAT_ID = os.getenv("GROUP_CHAT_ID")
 print("TOKEN:", os.getenv("TOKEN"))
 print("GROUP_CHAT_ID:", os.getenv("GROUP_CHAT_ID"))
 
-if not TOKEN or not GROUP_CHAT_ID:
+if not TOKEN:
     raise ValueError("Переменные окружения TOKEN не установлены!")
 
 if not GROUP_CHAT_ID:
